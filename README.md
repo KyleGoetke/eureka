@@ -1,4 +1,4 @@
-# Eureka
+# eureka
 Python 3 program to house and run various usehul/helpful functions.
 
 Currently has functions for:
