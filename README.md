@@ -1,5 +1,5 @@
 # eureka
-Python 3 program to house and run various usehul/helpful functions.
+Python program to house and run various useful functions.
 
 Currently has functions for:
 * Calculating tips (restaraunts)
