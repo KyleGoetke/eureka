@@ -1,4 +1,4 @@
-# utils (formerly eureka)
+# utils
 Python program to house and run various useful functions.
 
 Currently has functions for:
