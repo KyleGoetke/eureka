@@ -1,8 +1,7 @@
-# eureka
+# utils (formerly eureka)
 Python program to house and run various useful functions.
 
 Currently has functions for:
-* Calculating tips (restaraunts)
-* Calculating molar mass
-* Calculating pH/pOH
-* Calculating molarity
+* Calculating tips (e.g. for waitstaff)
+* Encoding and decoding via [caesar cipher](https://github.com/KyleGoetke/python-caesar-cipher)
+* Calculating total molar mass
