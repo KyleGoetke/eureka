@@ -5,7 +5,8 @@ def main():
               "[1] Tip Calculator\n"
               "[2] Caesar Cipher\n"
               "[3] Molar Mass Calculator\n"
-              "[4] Exit")
+              "[4] Fibonacci Calculator\n"
+              "[5] Exit")
         choice = input("# ")
 
         if choice == "1":
@@ -24,6 +25,10 @@ def main():
             molar_mass()
 
         elif choice == "4":
+            print("\n- Fibonacci Calculator -")
+            fibonacci()
+
+        elif choice == "5":
             print("\nGoodbye!")
             active = False
 
@@ -83,7 +88,6 @@ def caesar():
 def molar_mass():
     totalmass = 0
     working = True
-
     atomicMass = {0: 0,
                   "h": 1.008, "hydrogen": 1.008,
                   "he": 4.0026, "helium": 4.0026,
@@ -201,6 +205,7 @@ def molar_mass():
         molecule_mass = float(atomicMass[molecule])
         num_of_mol = float(input("How many moles/atoms? "))
         checker = input("Would you like to add another element? ").lower()
+
         if (checker[0] == "y"):
             temp = molecule_mass * num_of_mol
             totalmass += temp
@@ -211,6 +216,23 @@ def molar_mass():
             working = False
 
 ################################# ^ Choice 3 ^ #################################
+
+
+def fibonacci():
+    limit = int(input("Enter an upper limit: "))
+    x = 0
+    y = 1
+    output = ""
+
+    while (x < limit):
+        output += str(f'{x:,}') + " "  # format output(s)
+        z = x + y  # calculate next number
+        x = y      # swap to next digit pt. 1
+        y = z      # swap to next digit pt 2.
+
+    print(output)
+
+################################# ^ Choice 4 ^ #################################
 
 
 main()
